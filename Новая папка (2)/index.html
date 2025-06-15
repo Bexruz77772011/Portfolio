@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behruz Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onload="changeLanguage('en')">
+    <header>
+        <h1>Behruz Developer</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li>
+                    <select onchange="changeLanguage(this.value)">
+                        <option value="en">English</option>
+                        <option value="uz">O'zbekcha</option>
+                    </select>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <h2 id="welcome">Welcome to My Portfolio</h2>
+        <p id="intro">I am a frontend developer skilled in HTML, CSS, JavaScript & React.</p>
+    </section>
+
+    <section class="projects" id="projects">
+        <h2 id="projects-title">My Projects</h2>
+        <div class="project-list">
+            <div class="project">
+                <h3>Game Store Info Site</h3>
+                <p id="p1desc">Search & filter game using REST API</p>
+                <a href="https://fanciful-palmier-e09bd7.netlify.app/" target="_blank">Live Demo</a>
+            </div>
+            <div class="project">
+                <h3>Weather App</h3>
+                <p id="p2desc">Check live weather with OpenWeather API</p>
+                <a href="#">Live Demo</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="about" id="about">
+        <h2 id="about-title">About Me</h2>
+        <div class="container">
+            <p id="about-desc">I’m Behruz, a 14-year-old frontend developer from Uzbekistan. I specialize in building
+                modern and responsive web applications using HTML, CSS, JavaScript, and React. I love learning and
+                creating useful digital products.</p>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <h2 id="contact-title">Contact Me</h2>
+        <form>
+            <input id="name" type="text" placeholder="Your Name" required>
+            <input id="email" type="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+            <button type="submit" id="send">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <div class="div">
+            <p>&copy; 2025 Behruz Portfolio :</p>
+        </div>
+        <p>📧 Email: <a href="bolimjonov057@gmail.com">bolimjonov057@gmail.com</a></p>
+        <p>📱 Telegram: <a href="https://t.me/BEXA_16_6_2011" target="_blank">@BEXA_16_6_2011</a></p>
+        <p>📞 Phone: <a href="tel:+998904624288">+998 90 462 42 88</a></p>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
